@@ -9,7 +9,7 @@ package question29;
  *
  * @author Kshitij
  */
-public class numberEven implements Runnable{
+public class numberEven extends Thread{
     public void printEven(){
         for(int i=1;i<=20;i++){
             if(i%2==0){
@@ -18,9 +18,9 @@ public class numberEven implements Runnable{
         }
     }
 
-
     @Override
     public void run() {
+ //       Thread.yield();
         this.printEven();
         
     }

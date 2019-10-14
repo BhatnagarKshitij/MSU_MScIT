@@ -13,12 +13,12 @@ import java.util.Scanner;
  */
 public class sort {
 
-    int data[] = new int[10];
+    int data[] = new int[1];
 
     public void getData() {
         Scanner sc = new Scanner(System.in);
         try {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i <= 5; i++) {
                 data[i] = sc.nextInt();
             }
         } catch (ArrayIndexOutOfBoundsException e) {
