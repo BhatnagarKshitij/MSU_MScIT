@@ -19,13 +19,14 @@ public class Question29 {
      */
     public static void main(String[] args) throws InterruptedException {
         // TODO code application logic here
+        
         Thread t1=new Thread(new numberEven());
         Thread t2=new Thread(new numberOdd());
+        t2.join();
         t1.start();
-        t1.sleep(1000);
         t2.start();
-        t1.yield();
-        t1.join();
+
+        
         
        
         
