@@ -17,18 +17,13 @@ public class Question23 {
     public static void main(String[] args) {
         // TODO code application logic here
         popcorn pop=new popcorn() {
-            @Override
-            public void taste() {
+           
+            public void Question23() {
                 System.out.println("Awesome Taste!!");
             }
         };
         pop.taste();
-        Test t1=new Test(){
-            public void taste(){
-                System.out.println("Hello");
-            }
-        };
-        t1.taste();
+        pop.getClass().getName();
    }
     
 }
