@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movieshows>
+  <movie>
+    <moviename>SANJU</moviename>
+    <actor>RANBIR KAPOOR</actor>
+    <actress>SONAM KAPOOR</actress>
+    <director>Rajkumar Hirani</director>
+    <director>Ali Abbas</director>
+    <rating>9</rating>
+    <year>2018</year>
+  </movie>
+  <movie>
+    <moviename>Happy new year</moviename>
+    <actor>SHAHRUKH KHAN</actor>
+    <actress>DEEPIKA PADUKONE</actress>
+    <director>FARAH KHAN</director>
+<director>Ali Abbas</director>
+    <rating>6</rating>
+    <year>2014</year>
+  </movie>
+  <movie>
+    <moviename>Tiger Zinda Hai</moviename>
+    <actor>SALMAN KHAN</actor>
+    <actress>KATRINA KAIF</actress>
+    <director>Ali Abbas Zafar</director>
+<director>Ali Abbas</director>
+    <rating>6.4</rating>
+    <year>2017</year>
+  </movie>
+  <movie>
+    <moviename>Gabbar is Back</moviename>
+    <actor>AKSHAY KUMAR</actor>
+    <actress>SHRUTI HAASAN</actress>
+    <director>KRISH</director>
+<director>Ali Abbas</director>
+    <rating>8.5</rating>
+    <year>2015</year>
+  </movie>
+</movieshows>

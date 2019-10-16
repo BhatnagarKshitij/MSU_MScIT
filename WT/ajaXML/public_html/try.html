@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1> XML MOVIE </h1>
+        <table id="display" border="1"></table>
+        <input type="submit" onclick="loadXMLDoc()">
+
+        <script>
+            function loadXMLDoc() {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        // myFunction(this);
+                        var xmlDoc = this.responseXML;
+                        var table = "<tr><th>Movie Name</th><th>Actressssssss &#9829;&#9829;&#9829;</th></tr>";
+                        var x = xmlDoc.getElementsByTagName("movie");
+                        for (i = 0; i < x.length; i++) {
+                            table += "<tr><td>" +
+                                    x[i].getElementsByTagName("moviename")[0].childNodes[0].nodeValue +
+                                    "</td><td>" +
+                                    x[i].getElementsByTagName("actress")[0].childNodes[0].nodeValue +
+                                    "</td></tr>";
+                        }
+                        document.getElementById("display").innerHTML = table;
+
+                    }
+                };
+                xmlhttp.open("GET", "MOVIE.xml", true);
+                xmlhttp.send();
+            }
+function myFunction(xml) {
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Movie Name</th><th>Actressssssss &#9829;&#9829;&#9829;</th></tr>";
+  var x = xmlDoc.getElementsByTagName("movie");
+  for (i = 0; i <x.length; i++) {
+    table += "<tr><td>" + x[i].getElementsByTagName("moviename")[0].childNodes[0].nodeValue + "</td><td>" + x[i].getElementsByTagName("actress")[0].childNodes[0].nodeValue + "</td></tr>";
+  }
+  document.getElementById("display").innerHTML = table;
+}
+        </script>
+    </body>
+</html>
